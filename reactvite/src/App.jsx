@@ -4,14 +4,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import ICard from './components/ICard'
+import ICardGallery from './components/ICardGallery'
 function App() {
  
 
   return (
     <>
-    <div style={{border:'2px solid red', width:'300px', height:'200px'}}>
+    <div >
       
-      <Icard />
+      <ICardGallery/>
     </div>
     </>
   )
