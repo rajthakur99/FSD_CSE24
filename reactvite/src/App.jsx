@@ -9,18 +9,39 @@ import ICard from './components/ICard'
 // import ColorChange from './components/ColorChange'
 // import UpdateName from './components/UpdateName'
 import ImageManipulation from './components/ImageManipulation'
+import MyUseEffect from './components/MyUseEffect'
+import FetchProducts from './components/FetchProducts'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from './components/Login'
+import Registration from './components/Registration'
+import Dashboard from './components/Dashboard'
+import Home from './components/Home'
 function App() {
  
 
   return (
+    
     <>
-    <div>
-      
+      <div>
       {/* <MyState/> */}
       {/* <ColorChange/> */}
       {/* <UpdateName/> */}
-      <ImageManipulation/>
-    </div>
+      {/* <ImageManipulation/> */}
+      {/* <MyUseEffect/> */}
+      {/* <FetchProducts/> */}
+      <BrowserRouter>
+      <Routes>
+      <Route path='/login' element={<Login />}></Route>
+      <Route path='/register' element={<Registration />}></Route>
+      <Route path='/dashboard' element={<Dashboard />}></Route>
+      <Route path='/' element={<Home />}></Route>
+      
+      </Routes>
+      
+      
+      </BrowserRouter>
+      </div>
+    
     </>
   )
 }
